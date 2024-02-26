@@ -88,13 +88,50 @@ nav {
     flex-direction: row;
   }
 
-  .main > img {
-    .main-inner-text{
-      text-align: start;
-      width: 30%;
-      padding-top: 3rem;
-    }
+  .main > img { max-width: 57%;}
 
+  .main-inner-text{
+    text-align: start;
+    width: 40%;
+    padding-top: 3rem;
+  }
+
+  .main-inner-text button {
+    width: 70%;
+    height: 2rem;
+    margin: auto;
+    border: none;
+    border-radius: 2rem;
+
+  }
+
+  @media (min-width: 1024px){
+    .main-inner-text {
+      width: 30%;
+      margin: 0;
+      color: hsl(257, 40%, 49%);
     }
+  }
+
+  .main-inner-text button:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+    cursor: pointer;
+  }
+
+  .main-inner-text p {
+    color: rgb(217, 211, 211);
+    line-height: 1.7rem;
+  }
+
+  .main-inner-text p {
+    color: rgb(247, 246, 246);
+    width: 94%;
+  }
    
+  .main-inner-text h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: white;
+  }
 }
